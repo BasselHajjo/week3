@@ -1,0 +1,69 @@
+body{
+    background-image : url("download.jpg")
+}
+
+#contain{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+ul{
+    flex: 3;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 30px;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+ul:hover{
+  background-color: black;
+}
+
+h1{
+    margin: auto;
+    text-align: center;
+    font-size: 100px;
+    text-shadow: 5px 5px 16px #ff0000;
+}
+
+.img{
+    box-sizing: border-box;
+    display: block;
+    margin: 10px auto;
+    border-radius: 30px;
+}
+
+
+.quote{
+    font-family: 'Supermercado One', cursive;
+    margin: 10px auto;
+}
+
+.lang{
+    
+}
+
+.year{
+    
+}
+
+.author{
+    
+}
+
+.title{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px #ff0000;
+    text-transform: capitalize;
+}
+
+li{
+    list-style: none;
+    font-size: 20px;
+    text-align: center;
+    color: rgba(255,255,255,0.6);
+}
