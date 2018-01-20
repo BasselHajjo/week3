@@ -33,12 +33,10 @@ function createNewUL(){
     }
 }
 
-createNewUL();
+
 
 function newListItems(){
     for ( let i = 0 ; i < books.length ; i++){
-        let j = 0;
-        while(j<books.length){
             let bookTitle = document.createElement("h3");
             document.getElementById(books[i].title).appendChild(bookTitle)
             bookTitle.className = "title";
@@ -69,11 +67,20 @@ function newListItems(){
             document.getElementById(books[i].title).appendChild(bookQuote)
             bookQuote.className = "quote";
             bookQuote.innerHTML = books[i].quote;
-            i++;
-        }
     }
 }
 
+function loading(){
+  document.getElementById("button").innerHTML="Loading...";
+  setTimeout(hide, 1000);
+  setTimeout(delay, 1300);
+}
 
-newListItems();
+function hide(){
+  document.getElementById("button").style.display="none";
+}
 
+function delay(){
+  createNewUL();
+  newListItems();
+}
