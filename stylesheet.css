@@ -126,3 +126,49 @@ li{
     z-index: -1;
     opacity: 0.6;
 }
+
+@media only screen and (max-width: 500px) {
+h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.logo{
+    width: 15%;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+.myButton {
+    width: 30%;
+    font-size:10px;
+    padding: 2px;
+    margin: 10px 35%;
+}
+    
+.background-logo{
+    position: fixed;
+    top: 200px;
+    left: 0;
+    width: 100%;
+}
+    
+#contain{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+ul{
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    
+}
+    
+}
+
+
+
